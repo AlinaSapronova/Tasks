@@ -1,0 +1,72 @@
+/* Reset margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    background-image: linear-gradient( 109.6deg,  rgba(61,131,97,1) 11.2%, rgba(28,103,88,1) 91.1% );
+    font-family: "Italiana", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+.header {
+    color:white;
+    margin-bottom: 20px;
+    font-size: 4rem;
+    transition: color 0.3s ease; /* Smooth color change */
+}
+
+button {
+    font-family: "Italiana", sans-serif;
+    padding: 15px 30px;
+    margin-top:20px;
+    font-size: 2rem;
+    background-color:rgb(25, 37, 29);
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border: none;
+    border-radius: 20px;
+    width: 40%;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    color: #fff;
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+
+.color {
+        color:goldenrod;
+      };
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .header {
+        font-size: 3rem;
+    }
+
+    .btn {
+        width: 60%;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        font-size: 2.5rem;
+    }
+
+    .btn {
+        width: 80%;
+    }
+}
